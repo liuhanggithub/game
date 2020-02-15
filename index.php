@@ -13,7 +13,7 @@ if($_SERVER['HTTP_HOST']=="www.501wan.com" && !in_array($cc_uri, $arr_uri)  && s
     if(@$_COOKIE[$cc3]==1){
         cc_log($real_ip, $real_ip, 'cc_log3.txt', $cc_uri."-".$_SERVER['HTTP_USER_AGENT']."\n");
         exit('系统繁忙，请稍后访问');
-    }
+    } 
 
 
     if (empty($agent)) {
